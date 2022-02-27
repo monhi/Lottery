@@ -1,4 +1,4 @@
-import React      from 'react';
+import React,{useState}      from 'react';
 import {ethers}   from 'ethers';
 import Lottery    from '../../../artifacts/contracts/lottery.sol/Lottery.json';
 import { Button } from '../../Button';
@@ -8,6 +8,21 @@ import '../general.css';
 
                         
 function Home() {
+
+  const   lightBg       = false;
+  const   lightText     = true;
+  const   lightTextDesc = true;
+  const   topLine       = 'Lottery';
+  const   headline      = 'Up your chance of winning Lottery';
+  const   description   = 'Just by clicking following button, you get involved in a lottery that may make you rich, your lucky future is knocking the door';
+  const   buttonLabel   = 'Take part';
+  const   imgStart      = '';
+  const   img           = 'images/Lottery.jpg';
+  const   alt           = 'Credit Card';
+
+
+  let [message,setMessageValue] = useState(description);
+
 
   async function requestAccount()
   {
@@ -27,19 +42,13 @@ function Home() {
       console.log(price.toString());
       const transaction = await contract.enter({value:price.toString()});
       await transaction.wait();
+    }
+    else
+    {
+      setMessageValue("This browser is not connected to Metamask.");
     }    
   }
 
-  const   lightBg       = false;
-  const   lightText     = true;
-  const   lightTextDesc = true;
-  const   topLine       = 'Lottery';
-  const   headline      = 'Up your chance of winning Lottery';
-  const   description   = 'Just by clicking following button, you get involved in a lottery that may make you rich, your lucky future is knocking the door';
-  const   buttonLabel   = 'Take part';
-  const   imgStart      = '';
-  const   img           = 'images/Lottery.jpg';
-  const   alt           = 'Credit Card';
 
   return (
     <>
@@ -67,7 +76,7 @@ function Home() {
                       : 'home__hero-subtitle dark'
                   }
                 >
-                  {description}
+                  {message}
                 </p>
                   <Button buttonSize='btn--wide' buttonColor='blue' onClick={Enter}>
                     {buttonLabel}

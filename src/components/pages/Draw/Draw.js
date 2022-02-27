@@ -49,6 +49,10 @@ function Draw()
       {
         setMessageValue(err.data.message);
       }
+    }
+    else
+    {
+      setMessageValue("This browser is not connected to Metamask.");
     }    
   }
 
@@ -97,12 +101,6 @@ function Draw()
       </div>
     </>
   );
-
-  // return (
-  //   <>
-  //     <HeroSection {...homeObjOne} />
-  //   </>
-  // );
 }
 
 export default Draw;
