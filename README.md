@@ -21,9 +21,9 @@ In this file all hardhat accounts take part in lottery and after that the owner 
 # Using the web interface
 
 Steps to use the web interface:
-0. Run "npm intstall" to download all dependencies and packages for this project. 
+0. Run `npm intstall` to download all dependencies and packages for this project. 
 
-1. Open a new terminal and run local hardhat server by running  "npx hardhat node".
+1. Open a new terminal and run local hardhat server by running  `npx hardhat node`.
    then a local version of hardhat will run and you can not use that terminal for
    other purposes.
 
@@ -113,12 +113,12 @@ Steps to use the web interface:
       Private Key: 0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e
 
 
-2. Run "npx hardhat clean" to clean the previous compilation of contract.
+2. Run `npx hardhat clean` to clean the previous compilation of contract.
 
-3. Compile the contract by using "npx hardhat compile". 
+3. Compile the contract by using `npx hardhat compile`. 
    based on settings in hardhat.config.js, generated files will be copied to src/artifacts directory near other react files.
 
-4. Deploy the contract to the local server by running in terminal "npx hardhat run scripts/deploy.js --network localhost"
+4. Deploy the contract to the local server by running in terminal `npx hardhat run scripts/deploy.js --network localhost`
    then it shows the generated address of contract in local test network.
    you are supposed to enter the address of contract inside following files:
 
@@ -132,7 +132,7 @@ Steps to use the web interface:
    Draw.js 
    Home.js 
 
-5. Run React locally by calling "npm start" in terminal.
+5. Run React locally by calling `npm start` in terminal.
 6. You are supposed to open the client in a web browser that is connected to Metamask.
 7. You are supposed to set Metamask in a way that it connects to (localhost 8545)
    Then import first and some other accounts from  local hardhat by importing private keys into Metamask.
