@@ -21,6 +21,7 @@ In this file all hardhat accounts take part in lottery and after that the owner 
 # Using the web interface
 
 Steps to use the web interface:
+
 0. Run `npm intstall` to download all dependencies and packages for this project. 
 
 1. Open a new terminal and run local hardhat server by running  `npx hardhat node`.
