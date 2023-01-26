@@ -7,9 +7,9 @@ The main Solidity project is from Stephen Grider's "Ethereum and Solidity: The C
 
 To test it, I use just only hardhat local server because I do not want to share my infura information.
 
-Frontend is implemented by using react-websit-v2 project developed by braincodex.
+Frontend is implemented by using react-website-v2 project developed by braincodex.
 
-I change it in a way that I can use in this project.
+I change it in a way that I can use it in this project.
 
 # Testing 
 
