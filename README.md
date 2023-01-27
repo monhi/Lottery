@@ -114,7 +114,7 @@ Steps to use the web interface:
       Private Key: 0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e
 
 
-2. Run `npx hardhat clean` to clean the previous compilation of contract.
+2. Open another terminal in the same directory and run `npx hardhat clean` to clean the previous compilation of contract.
 
 3. Compile the contract by using `npx hardhat compile`. 
    based on settings in hardhat.config.js, generated files will be copied to src/artifacts directory near other react files.
