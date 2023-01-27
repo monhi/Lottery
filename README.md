@@ -125,7 +125,7 @@ Steps to use the web interface:
 
    ContractAddress.js
 
-   In above file, there is a constant value equal to contract address which looks like following line
+   In the above file, there is a constant value equal to contract address which looks like following line
    const LotteryAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3";
    if the contract address is different from above address, you are supposed to replace it in both files.
 
